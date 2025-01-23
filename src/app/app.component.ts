@@ -9,14 +9,14 @@ import { Aa } from './a';
   imports: [CommonModule, Aa],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-}) 
+})  
 export class AppComponent {
   f = [1, 2, 3, 4, 5]
   int: number = 0
   bool: boolean = true
   count$ = new Subject<number>()
   constructor() {
-    this.count$.pipe(
+    this.count$.pipe( 
       tap(console.log)
     )
       .subscribe(
