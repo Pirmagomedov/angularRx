@@ -9,7 +9,7 @@ import { Aa } from './a';
   imports: [CommonModule, Aa],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-}) 
+})  
 export class AppComponent {
   f = [1, 2, 3, 4, 5]
   int: number = 0
