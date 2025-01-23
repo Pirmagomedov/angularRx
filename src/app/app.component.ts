@@ -16,7 +16,7 @@ export class AppComponent {
   bool: boolean = true
   count$ = new Subject<number>()
   constructor() {
-    this.count$.pipe(
+    this.count$.pipe( 
       tap(console.log)
     )
       .subscribe(
