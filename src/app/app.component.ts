@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Subject, map, tap } from 'rxjs';
 import { Aa } from './a';
-
+ 
 @Component({
   selector: 'app-root',
   imports: [CommonModule, Aa],
