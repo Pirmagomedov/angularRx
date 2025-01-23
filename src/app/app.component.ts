@@ -5,7 +5,7 @@ import { Subject, map, tap } from 'rxjs';
 import { Aa } from './a';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-root', 
   imports: [CommonModule, Aa],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
