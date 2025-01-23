@@ -2,8 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Subject, map, tap } from 'rxjs';
-import { Aa } from './a';
-
+import { Aa } from './a'; 
 @Component({
   selector: 'app-root',
   imports: [CommonModule, Aa],
@@ -11,7 +10,7 @@ import { Aa } from './a';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  f = [1,2,3,4,5]
+  f = [1, 2, 3, 4, 5]
   int: number = 0
   bool: boolean = true
   count$ = new Subject<number>()
@@ -30,8 +29,8 @@ export class AppComponent {
       )
   }
 
-  a(a: HTMLDivElement) {
-    console.log(a, this)
+  a(target: MouseEvent) {
+    console.log(target.target, this)
   }
 
   d() {
