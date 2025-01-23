@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { Subject, map, tap } from 'rxjs';
 import { Aa } from './a';
 
-@Component({ 
+@Component({
   selector: 'app-root', 
   imports: [CommonModule, Aa],
   templateUrl: './app.component.html',
