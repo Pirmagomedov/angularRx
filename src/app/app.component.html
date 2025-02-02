@@ -1,6 +1,15 @@
-<ng-template #asd>
-  <div class="as">123</div>
-</ng-template>
-<a-a [ali]="d.bind(this)"></a-a>
-<div>{{int}}</div>
-<div (click)="a($event)">{{bool}}</div>
+<div #par class="par">
+    <div *ngFor="let cub of cubs; let i = index" class="par__cub" [style.left.px]="i*20" [style.top.px]="i*10">
+        <div class="par__cub-int">{{cub}}</div>
+    </div>
+</div>
+<h1>{{ ali$ | async }}</h1>
+<button (click)="add()">add</button>
+<button (click)="print()">print</button>
+<br><br><br>
+<router-outlet></router-outlet>
+<a routerLink="home">123</a>
+<br>
+<div *ngFor="let pok of poks">
+    {{pok.name}} - Pok!
+</div>
